@@ -28,13 +28,14 @@
     header {
         height: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
     .head-left {
         width: 100%;
         padding: 20px;
+        margin-top: 60px;
     }
 
     .head-left h1 {
@@ -53,8 +54,8 @@
     }
 
     .head-right img {
-        width: 280px;
-        margin-top: 90px;
+        width: 300px;
+        margin: 0;
     }
 
     /* HEAD END */
