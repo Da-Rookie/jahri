@@ -1,0 +1,33 @@
+@media screen and (max-width : 756px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .content p {
+        font-size: 1.7rem;
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+    }
+
+    .content button {
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+
+    .launch-time div {
+        justify-content: start;
+        margin-left: -10px;
+    }
+
+    .launch-time div p {
+        font-size: 2.8rem;
+    }
+
+    .rocket {
+        width: 230px;
+        right: 5%;
+    }
+}

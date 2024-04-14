@@ -1,0 +1,79 @@
+@media screen and (max-width : 756px) {
+
+    /* NAVBAR START */
+    .navbar h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar ul li a:hover {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+    
+    /* NAVBAR END */
+
+    /* HEAD START */
+
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .head-left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .head-left h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .head-left p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .head-left button {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    .head-right img {
+        width: 280px;
+        margin-top: 90px;
+    }
+
+    /* HEAD END */
+
+    /* BRIDGE START */
+
+    .bridge {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bridge a i {
+        font-size: 1.2rem;
+    }
+
+    .bridge a {
+        font-size: 1.1rem;
+    }
+}

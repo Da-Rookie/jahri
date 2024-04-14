@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Tilt Neon';
+    background: url(/img/contactbg.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #0d0d0da9;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar h3 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #dfdfdf;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Permanent Marker';
+}
+
+.navbar ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #dfdfdf;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+
+.navbar ul li a:hover {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #818181;
+}
+
+.btn-left {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    color: #dfdfdf;
+    font-family: 'Tilt Neon';
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+
+.btn-right {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    color: #0d0d0d;
+    background: #dfdfdf;
+    border: 2px solid #dfdfdf;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+
+.btn-left:hover {
+    color: #535353;
+}
+
+.btn-right:hover,
+.head-left button:hover {
+    border: 2px solid #dfdfdf;
+    background-color: transparent;
+    color: #dfdfdf;
+}
+
+
+/* NAV END */
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 800px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0db6;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact-left {
+    width: 50%;
+}
+
+.contact-left img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    animation: color 15s ease-in-out infinite;
+    -webkit-animation: color 15s ease-in-out infinite;
+}
+
+@keyframes color {
+    0%{
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+        -webkit-filter: hue-rotate(180deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+}
+
+.contact-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35px;
+}
+
+.contact-right h1 {
+    color: #dfdfdf;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+.contact-right label {
+    color: #dfdfdf;
+}
+
+.contact-right textarea,
+.contact-right input {
+    width: 100%;
+    height: 36px;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #eaeaea;
+    transition: all 0.3s ease-in-out;
+    margin: 15px 0;
+    font-family: 'Tilt Neon';
+    letter-spacing: 1px;
+}
+
+.contact-right textarea {
+    resize: none;
+    height: 90px;
+}
+
+.contact-right button {
+    padding: 8px 12px;
+    color: #dfdfdf;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid #eaeaea;
+    font-size: 1rem;
+    font-family: 'Tilt Neon';
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom-details i{
+    color: #dfdfdf;
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+/* Hover effect */
+
+.contact-right input:hover,
+.contact-right textarea:hover,
+.contact-right button{
+    border-bottom-color: #cacaca;
+}
+
+.contact-right button:hover {
+    background-color: #dfdfdf;
+    color: #0d0d0d;
+}
+
+/* Focus state */
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-bottom-color: #9b9b9b;
+}

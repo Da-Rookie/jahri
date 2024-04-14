@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, rgba(63, 94, 251, 0) 0%, rgba(0, 0, 0, 1) 100%), url(/img/shop-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* filter: blur(1px);
+    transform: scale(1.1); */
+    padding: 0 8%;
+}
+
+.content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content p {
+    font-size: 24px;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span {
+    color: #f75a4f;
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.content button img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launch-time {
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    column-gap: 36px;
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -20px;
+}
+
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 1;
+    }
+}
+
