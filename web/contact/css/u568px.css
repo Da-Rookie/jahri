@@ -1,66 +1,71 @@
 @media screen and (max-width : 756px) {
     /* NAVBAR START */
-        .navbar h3 {
-            font-size: 1.4rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
+
+    ul {
+        gap: 6px;
+    }
+
+    .navbar h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar ul li a:hover {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+
+    /* NAVBAR END */
+
+    /* MAIN CONTACT START */
+
+    .contact {
+        width:max-content;
+        padding: 20px;
+    }
+
+    .contact-left {
+        display: none;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding: 15px 10px; 
+    }
+
+    .contact-right h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .contact-right label,
+    .contact-right button {
+        font-size: 1rem;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width:  250px;
+    }
+
+    .contact-right textarea {
+        height: 80px;
+    }
     
-        .navbar ul li a {
-            font-size: 1rem;
-            font-weight: 300;
-        }
-    
-        .navbar ul li a:hover {
-            font-size: 1rem;
-            font-weight: 300;
-        }
-    
-        .navbar .btn {
-            display: none;
-        }
-    
-        /* NAVBAR END */
+    .bottom-details i {
+        font-size: 1.25rem;
+        font-weight: 100;
+    }
 
-        /* MAIN CONTACT START */
-
-        .contact {
-            width:max-content;
-            padding: 20px;
-        }
-
-        .contact-left {
-            display: none;
-        }
-
-        .contact-right {
-            width: 100%;
-            padding: 15px 10px; 
-        }
-
-        .contact-right h1 {
-            font-size: 1.4rem;
-            font-weight: 500;
-        }
-
-        .contact-right label,
-        .contact-right button {
-            font-size: 1rem;
-        }
-
-        .contact-right input,
-        .contact-right textarea {
-            width:  250px;
-        }
-
-        .contact-right textarea {
-            height: 80px;
-        }
-        
-        .bottom-details i {
-            font-size: 1.25rem;
-            font-weight: 100;
-        }
-
-        /* MAIN CONTACT END */
+    /* MAIN CONTACT END */
 }
