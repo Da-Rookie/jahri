@@ -39,7 +39,7 @@
 
     .top-left {
         padding: 0 20px;
-        height: 200px;
+        height: 230px;
         width: 100%;
         justify-content: end;
     }
@@ -63,6 +63,8 @@
 
     .bottom {
         flex-direction: column;
+        border-top: 2px solid #f15a5a;
+        border-bottom: 2px solid #f15a5a;
     }
 
     .bottom h1 {
