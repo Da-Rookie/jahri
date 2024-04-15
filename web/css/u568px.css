@@ -1,6 +1,11 @@
 @media screen and (max-width : 756px) {
 
     /* NAVBAR START */
+
+    ul {
+        gap: 6px;
+    }
+
     .navbar h3 {
         font-size: 1.4rem;
         font-weight: 300;
@@ -56,6 +61,7 @@
     .head-right img {
         width: 300px;
         margin: 0;
+        margin-right: 50px;
     }
 
     /* HEAD END */
