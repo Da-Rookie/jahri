@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 * {
     margin: 0;
@@ -135,19 +138,42 @@ header {
     align-items: start;
 }
 
-.top-left h1 {
-    color: #dfdfdf;
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: 'Permanent Marker';
+
+.top-left p {
+    color: #fdfdfd;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family:poppins;
+    text-shadow: 0 0 5px #fdfdfd,
+    0 0 10px #fdfdfd,
+    0 0 20px #fdfdfd,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff;
+    /* text-shadow:
+    0 0 5px #fdfdfd,
+    0 0 10px #fdfdfd,
+    0 0 20px #fdfdfd,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 120px #0ff; */
+    animation: title 10s ease-in infinite;
 }
 
-.top-left h5 {
-    color: #f15a5a;
-    font-size: 1.7rem;
-    font-weight: 400;
+@keyframes title {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(120deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
 }
-
+  
 .top-right {
     width: 50%;
     display: flex;
@@ -196,16 +222,73 @@ header {
     width: 100%;
     height: max-content;
     padding: 80px;
-    background: url(/img/aboutbg.jpg) no-repeat center;
+    background: url(/img/aboutbg2.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.about-us h1 {
-    color: #e49a1a;
-    font-size: 2rem;
-    text-align: center;
+.summary {
+    /* backdrop-filter: blur(4px); */
+    padding: 12px 0;
+    /* margin-top: -48px; */
+    /* margin-bottom: -64px; */
+    margin: 30px 0;
 }
+
+.neon {
+    font-family: 'Londrina Outline';
+    color: #FB4264;
+    text-align: center;
+    font-size: 4rem;
+    /* line-height: 9vw; */
+    text-shadow: 0 0 3vw #F40A35;
+  }
+  
+  .flux {
+    font-family: Yellowtail;
+    color: #426DFB;
+    text-align: center;
+    font-size: 2rem;
+    /* line-height: 9vw; */
+    text-shadow: 0 0 3vw #2356FF;
+  }
+  
+  .neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+  }
+  
+  .flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+  }
 
 .card {
     display: flex;
@@ -215,23 +298,23 @@ header {
     gap: 50px;
 }
 
-a .card-list,
+a .card-list4,
 a .card-list1,
 a .card-list2,
 a .card-list3 {
-    width: 300px;
-    height: 400px;
-    margin-top: 100px;
+    width: 280px;
+    height: 350px;
+    /* margin-top: 100px; */
     display: flex;
     justify-content: center;
     align-items: end;
-    border: 2px solid #e49a1a;
+    border: 2px solid #c878a7;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-    box-shadow: 0px 0px 15px #e49a1a;
+    box-shadow: 0px 0px 15px #c878a7;
     transition: 0.3s !important;
     -webkit-transition: 0.3s !important;
     -moz-transition: 0.3s !important;
@@ -239,28 +322,28 @@ a .card-list3 {
     -o-transition: 0.3s !important;
 }
 
-a .card-list {
-    /* GANTI FOTO */
-    background: url(/img/darookiee.jpg) no-repeat center;
-    background-size: cover;	
-}
 a .card-list1 {
     /* GANTI FOTO */
-    background: url(/img/darookiee.jpg) no-repeat center;
+    background: url(/img/card1.jpeg) no-repeat center;
     background-size: cover;	
 }
 a .card-list2 {
     /* GANTI FOTO */
-    background: url(/img/darookiee.jpg) no-repeat center;
+    background: url(/img/card2.jpeg) no-repeat center;
     background-size: cover;	
 }
 a .card-list3 {
     /* GANTI FOTO */
-    background: url(/img/darookiee.jpg) no-repeat center;
+    background: url(/img/card3.jpeg) no-repeat center;
+    background-size: cover;	
+}
+a .card-list4 {
+    /* GANTI FOTO */
+    background: url(/img/card4.jpeg) no-repeat center;
     background-size: cover;	
 }
 
-a .card-list:hover,
+a .card-list4:hover,
 a .card-list1:hover,
 a .card-list2:hover,
 a .card-list3:hover {
@@ -280,19 +363,63 @@ a .card-list3:hover {
 }
 
 .card-details h1 {
-    color: #faa005;
+    color: #aa0b68;
     font-size: 1.5rem;
-    text-shadow: 5px 5px 10px #0d0d0d;
     margin: 5px 0;
+    text-shadow:
+    0 0 5px #fdfdfd,
+    0 0 10px #fdfdfd,
+    0 0 20px #fdfdfd,
+    0 0 40px #c878a7,
+    0 0 80px #c878a7,
+    0 0 90px #c878a7,
+    0 0 100px #c878a7,
+    0 0 150px #c878a7;
 }
 
 .card-details .lane {
     width: 37px;
     height: 5px;
-    background-color: #e49a1a;
+    background-color: #aa0b68;
     border-radius: 6px;
     margin-bottom: 20px;
+    box-shadow:     
+    0 0 5px #fdfdfd,
+    0 0 10px #fdfdfd,
+    0 0 20px #fdfdfd,
+    0 0 40px #c878a7,
+    0 0 80px #c878a7,
+    0 0 90px #c878a7,
+    0 0 100px #c878a7,
+    0 0 150px #c878a7;;
 }
+
+/* Card Section End */
+
+
+/* Footer Styling Start */
+.bridge {
+    width: 100%;
+    height: 100px;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items:center
+}
+
+.bridge a i {
+    color: #dfdfdf;
+    font-size: 2rem;
+    font-weight: 500;
+} 
+
+.bridge a {
+    font-size: 1.5rem;
+    color: #dfdfdf;
+}
+
+/* Footer Styling End */
 
 
 
