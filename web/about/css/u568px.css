@@ -38,18 +38,14 @@
     }
 
     .top-left {
-        padding: 0 20px;
+        padding: 0 25px;
         height: 234px;
         width: 100%;
         justify-content: end;
     }
 
-    .top-left h1 {
-        font-size: 2rem;
-    }
-
-    .top-left h5 {
-        font-size: 1.4rem;
+    .top-left p {
+        font-size: 1.8rem;
     }
 
     .top-right {
@@ -80,17 +76,26 @@
     }
 
     .about-us {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
-    .about-us .title {
-        padding-bottom: 70px;
+    .summary {
+        margin: 30px 0;
+    }
+
+    .neon {
+        font-size: 2.8rem;
+    }
+
+    .flux {
         font-size: 1.5rem;
+        margin: 10px 0;
     }
 
     .card {
         margin: 0;
         gap: 50px;
+        margin-bottom: 40px;
     }
 
     a .card-list {
@@ -101,5 +106,32 @@
 
     .card-details h1 {
         font-size: 1.4rem;
+        letter-spacing: 0.6px;
+    }
+
+    a .card-list4,
+    a .card-list1,
+    a .card-list2,
+    a .card-list3 {
+        width: 290px;
+        height: 380px;
+    }
+
+    /* BRIDGE START */
+
+    .bridge {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bridge a i {
+        font-size: 1.2rem;
+    }
+
+    .bridge a {
+        font-size: 1.1rem;
     }
 }
