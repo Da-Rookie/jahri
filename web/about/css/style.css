@@ -255,7 +255,7 @@ header {
     text-shadow: 0 0 3vw #2356FF;
   }
   
-  .neon {
+/*   .neon {
     animation: neon 1s ease infinite;
     -moz-animation: neon 1s ease infinite;
     -webkit-animation: neon 1s ease infinite;
@@ -271,9 +271,9 @@ header {
       text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
       color: #806914;
     }
-  }
+  } */
   
-  .flux {
+/*   .flux {
     animation: flux 2s linear infinite;
     -moz-animation: flux 2s linear infinite;
     -webkit-animation: flux 2s linear infinite;
@@ -290,7 +290,7 @@ header {
       text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
       color: #146C80;
     }
-  }
+  } */
 
 .card {
     display: flex;
