@@ -273,7 +273,7 @@ header {
     }
   } */
   
-/*   .flux {
+  .flux {
     animation: flux 2s linear infinite;
     -moz-animation: flux 2s linear infinite;
     -webkit-animation: flux 2s linear infinite;
@@ -306,7 +306,7 @@ a .card-list2,
 a .card-list3 {
     width: 280px;
     height: 350px;
-    /* margin-top: 100px; */
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: end;
