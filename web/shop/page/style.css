@@ -106,3 +106,19 @@ body {
 }
 /* Navbar End */
 
+/* Slider Section Start */
+.slider {
+    background-image: url(./img/shop-page-bg.jpg);
+}
+
+.sliderItem {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.itemLeft img{
+    width: 500px;
+    height: auto;
+}
+/* Slider Section End */
