@@ -163,3 +163,33 @@ p {
   color: #fff;
 }
 /* Slider Section End */
+
+/* Catalogue Section Start */
+.catalog {
+  background: linear-gradient(0deg, #000, #272727);
+  padding: 24px 64px;
+}
+
+.catalogWrapper {
+  margin-top: 24px;
+  padding: 24px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  background-color: blue;
+}
+
+.catalogItem {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.catalogImg {
+  width: 50px;
+}
+
+.catalogTitle, .catalogPrice {
+  color: #fff;
+}
+/* Catalogue Section End */
