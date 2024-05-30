@@ -114,49 +114,52 @@ body {
   margin-top: 85px;
 }
 
-.sliderWrapper{
-    display: flex;
-    width: 300vw;
-    transition: all 1s ease-in-out;
+.sliderWrapper {
+  display: flex;
+  width: 300vw;
+  transition: all 1s ease-in-out;
 }
 
 .sliderItem {
-    background: #0d0d0db6;
-    backdrop-filter: blur(5px);
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    column-gap: 24px;
+  background: #0d0d0db6;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  column-gap: 24px;
+  padding: 24px 0;
 }
 
-.itemLeft{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 50%; */
+.itemLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #000, #272727);
 }
 
-.itemRight{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.itemRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .sliderImg {
-    width: 400px;
+  width: 400px;
+  padding: 12px 12px;
 }
 
-.sliderTitle{
-    margin-bottom: 8px;
+.sliderTitle {
+  margin-bottom: 8px;
 }
 
-.sliderDesc{
-    margin-bottom: 12px;
+.sliderDesc {
+  margin-bottom: 12px;
 }
-h1,p {
-    color: #fff;
+h1,
+p {
+  color: #fff;
 }
 /* Slider Section End */
