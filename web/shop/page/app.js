@@ -90,21 +90,17 @@ menuItems.forEach((item, index) => {
     // Change Catalog
     choosenCatalog = catalog[index];
 
-    // Change each Img of current catalog
-    catalog.forEach((item, index) => {
-        currentCatalogTitle[index].textContent = item.title[index];
-      });
-    // Change each title of current catalog
-
-    // Change each price of current catalog
+    // Change each Img of selected Catalog
+    currentCatalogImg.forEach((img, index) => {
+      img.src = choosenCatalog.img;
+    })
+    // Change each title of selected Catalog
+    currentCatalogTitle.forEach((title, index) => {
+      title.textContent = choosenCatalog.titles[index];
+    })
+    // Change each price of selected Catalog
+    currentCatalogPrice.forEach((price, index)=> {
+      price.textContent = choosenCatalog.prices[index];
+    })
   });
 });
-
-/*
-let je = catalog[0].img;
-let pe = catalog[0].titles[0];
-let te = catalog[0].prices[0];
-console.log(je);
-console.log(pe);
-console.log(te);
-*/
