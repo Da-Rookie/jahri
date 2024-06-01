@@ -3,7 +3,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 
 const catalog = [
   {
-    id: 1,
+    game: "COD Mobile",
     img: "./img/cp-cod.png",
     titles: [
       "31 CP",
@@ -27,7 +27,7 @@ const catalog = [
     ],
   },
   {
-    id: 2,
+    game: "PUBG Mobile",
     img: "./img/uc-pubg.png",
     titles: [
       "60 UC",
@@ -51,7 +51,7 @@ const catalog = [
     ],
   },
   {
-    id: 3,
+    game: "Valorant",
     img: "./img/point-valorant.png",
     titles: [
       "56 Points",
