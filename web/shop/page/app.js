@@ -30,7 +30,7 @@ const catalog = [
     game: "PUBG Mobile",
     img: "./img/uc-pubg.png",
     titles: [
-      "60 UC",
+      "61 UC",
       "325 UC",
       "660 UC",
       "1800 UC",
@@ -78,12 +78,19 @@ const catalog = [
 
 let choosenCatalog = catalog[0];
 
+
 const currentCatalogImg = document.querySelectorAll(".catalogImg");
 const currentCatalogTitle = document.querySelectorAll(".catalogTitle");
 const currentCatalogPrice = document.querySelectorAll(".catalogPrice");
 
+const catalogItem = document.querySelectorAll('.catalogItem');
+const catalogModal = document.querySelectorAll('.catalog-modal');
+
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
+    catalogModal.forEach((e)=>{
+      e.classList.remove('active');
+    })
     // Slider FX
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
@@ -102,5 +109,24 @@ menuItems.forEach((item, index) => {
     currentCatalogPrice.forEach((price, index)=> {
       price.textContent = choosenCatalog.prices[index];
     })
+  });
+});
+
+
+const titleDesc = document.querySelectorAll('.title-desc');
+const priceDesc = document.querySelectorAll('.price-desc');
+
+
+catalogItem.forEach((element,index) => {
+  element.addEventListener('click', () => {
+    catalogModal[index].classList.toggle('active');
+
+    titleDesc.forEach((element)=> {
+      element.textContent = choosenCatalog.titles[index];
+    });
+
+    priceDesc.forEach((element)=> {
+      element.textContent = choosenCatalog.prices[index];
+    });
   });
 });
