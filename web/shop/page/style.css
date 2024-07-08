@@ -219,3 +219,70 @@ p {
   color: #dfdfdf;
 }
 /* Footer Section End */
+
+/* Modal START */
+
+.catalog-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  backdrop-filter: blur(5px);
+  background-color: #07000093;
+}
+
+input[type=email]{
+  font-size: 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  color: #dfdfdf;
+  padding: 12px 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input[type=submit] {
+  font-size: 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  color: #dfdfdf;
+  padding: 12px 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.catalogImg.active{
+  width: 100px;
+  height: 100px;
+}
+
+.catalog-modal.active,
+.catalogTitle.active,
+.catalogPrice.active {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.catalog-modal .catalog-desc-modal {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Modal END */
